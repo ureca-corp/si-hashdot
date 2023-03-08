@@ -1,12 +1,21 @@
-import { Header } from "@/common/components";
-import { BannerSection, MainSection, PortfolioSection } from "../Sections";
+import { Header, MobileHeader } from "@/common/components";
+
+import { useCustomMediaQuery } from "@/common/theme/screen";
+import {
+  BannerSection,
+  MainSection,
+  PortfolioSection,
+} from "../Sections/MainSection";
+import { PartnersSection } from "../Sections/PartnersSection/PartnersSection";
 
 export const LandingView = () => {
+  const { isSmall } = useCustomMediaQuery();
   return (
     <div>
-      <Header />
+      {isSmall ? <MobileHeader /> : <Header />}
       <MainSection />
       <BannerSection />
+      <PartnersSection />
       <PortfolioSection />
     </div>
   );

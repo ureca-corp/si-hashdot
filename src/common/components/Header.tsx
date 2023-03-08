@@ -7,13 +7,13 @@ export const Header = () => {
       <nav>
         <ul css={sx.lists}>
           <li>
-            <Typography>[About]</Typography>
+            <Typography>About</Typography>
           </li>
           <li>
-            <Typography>[Partners]</Typography>
+            <Typography>Partners</Typography>
           </li>
           <li>
-            <Typography>[Portfolio]</Typography>
+            <Typography>Portfolio</Typography>
           </li>
         </ul>
       </nav>
@@ -25,13 +25,15 @@ const sx = {
   root: css`
     width: 100%;
     background-color: rgba(60, 100, 177, 0.06);
-    color: #b4b8bf;
-    border-bottom: 1px solid #d8d8d8;
+
     padding: 28px 0;
   `,
   lists: css`
     display: flex;
     justify-content: center;
     gap: 70px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
   `,
 };

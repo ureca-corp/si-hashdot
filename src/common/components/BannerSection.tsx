@@ -1,3 +1,4 @@
+import { MediaQueries } from "@/common/theme/screen";
 import { css } from "@emotion/react";
 import { Typography } from "@mui/material";
 
@@ -15,7 +16,7 @@ export const BannerSection = () => {
 
 const sx = {
   root: css`
-    height: 100%;
+    height: auto;
     padding: 14px 0;
     color: #fff;
 
@@ -26,5 +27,8 @@ const sx = {
     width: 90%;
     margin: 0 auto;
     font-size: 14px;
+    @media ${MediaQueries.sm} {
+      font-size: 12px;
+    }
   `,
 };
