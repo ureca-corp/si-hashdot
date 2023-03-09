@@ -32,7 +32,7 @@ const sx = {
   root: css`
     width: 100%;
     background-color: #fff;
-    padding: 7.813vw 0 5.208vw 0;
+    padding: 7.813vw 0 0 0;
   `,
   inner: css`
     max-width: 1024px;
