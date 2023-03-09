@@ -2,29 +2,40 @@ import { css } from "@emotion/react";
 import { Typography } from "@mui/material";
 import { Stack } from "@mui/system";
 import Image from "next/image";
+import { useState } from "react";
 import { usePortfolioSection } from "./models/usePortfolioSection";
 
-export const PortfolioSection = () => {
-  const { portfolios } = usePortfolioSection();
+export const MobilePortfolioSection = () => {
+  const { mobilePortfolios } = usePortfolioSection();
+  const [value, setValue] = useState(0);
+  const handleChange = (index: number) => {
+    setValue(index);
+  };
 
   return (
     <div css={sx.root} id="portfolio">
       <Stack css={sx.inner}>
         <Stack>
           <Typography css={sx.title}>Portfolio</Typography>
-          <div css={sx.Images}>
-            {portfolios.map((it, index) => (
+          <Stack css={sx.Images}>
+            {mobilePortfolios.map((it, index) => (
               <div key={index} css={sx.wrap}>
-                <div css={sx.logo(it.width, it.height)} className="logo">
+                <div
+                  onClick={() => handleChange(index)}
+                  css={sx.logo(it.width, it.height)}
+                  className="logo"
+                >
                   <Image src={it.src} alt="logo" fill />
                 </div>
-                <div css={sx.text} className="text">
-                  At eripuit signiferumque sea, vel ad mucius{"\n"}molestie, cu
-                  labitur iuvaret vulputate sed.
-                </div>
+                {value === index ? (
+                  <Typography css={sx.text} className="text">
+                    At eripuit signiferumque sea, vel ad mucius{"\n"}molestie,
+                    cu labitur iuvaret vulputate sed.
+                  </Typography>
+                ) : null}
               </div>
             ))}
-          </div>
+          </Stack>
         </Stack>
       </Stack>
     </div>
@@ -46,52 +57,34 @@ const sx = {
   `,
   title: css`
     font-weight: 700;
-    font-size: 1.667vw;
-    margin-bottom: 7.76vw;
+    font-size: 7.778vw;
+    margin-bottom: 18.889vw;
     text-align: center;
     color: #22232f;
   `,
   Images: css`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    row-gap: 7.8vw;
-    column-gap: 10.677vw;
+    gap: 15.556vw;
     align-items: center;
     justify-items: center;
   `,
   wrap: css`
-    position: relative;
-    width: auto;
-    height: 5.938vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     cursor: pointer;
-    &:hover {
-      .text {
-        opacity: 1;
-      }
-      .logo {
-        opacity: 0;
-      }
-    }
   `,
   logo: (width: string, height: string) => css`
     width: ${width};
     height: ${height};
     position: relative;
-    display: flex;
-    justify-content: center;
   `,
   text: css`
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 16.667vw;
-    font-size: 0.729vw;
-    line-height: 1.242vw;
-    color: #373f41;
-    white-space: pre-wrap;
-    display: flex;
-    opacity: 0;
+    width: 100%;
+    font-size: 3.333vw;
+    line-height: 5.556vw;
     text-align: center;
+    color: #373f41;
+    margin-top: 5vw;
   `,
 };

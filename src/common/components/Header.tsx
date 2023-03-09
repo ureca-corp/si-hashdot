@@ -1,5 +1,6 @@
 import { css } from "@emotion/react";
 import { Typography } from "@mui/material";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -7,13 +8,19 @@ export const Header = () => {
       <nav>
         <ul css={sx.lists}>
           <li>
-            <Typography>About</Typography>
+            <Link href="#">
+              <Typography>Home</Typography>
+            </Link>
           </li>
           <li>
-            <Typography>Partners</Typography>
+            <Link href="#partners">
+              <Typography>Partners</Typography>
+            </Link>
           </li>
           <li>
-            <Typography>Portfolio</Typography>
+            <Link href="#portfolio">
+              <Typography>Portfolio</Typography>
+            </Link>
           </li>
         </ul>
       </nav>

@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import Image from "next/image";
 import logo from "@/hashdot_logo.png";
-import { Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { MediaQueries, useCustomMediaQuery } from "@/common/theme/screen";
 
 export const MainSection = () => {
@@ -16,16 +16,21 @@ export const MainSection = () => {
         ) : (
           <Image src={logo} alt="logo" width={373} height={72} />
         )}
-
-        <Typography css={sx.title}>{"{About}"}</Typography>
-        <Typography css={sx.bodyText}>
-          Hashdot is a financial services company specializing in management
-          equity & crypto investment.{"\n"}Hashdot aims for stable operation,
-          expert innovation, and capital value improvement for the growth of
-          high potential companies around the world.{"\n"}Hashdot consistently
-          provides high-quality planning and multi-faceted services for target
-          investors and partners.
-        </Typography>
+        <Stack css={sx.bodyText}>
+          <Typography css={sx.text}>
+            Hashdot is a financial services company specializing in management
+            equity & crypto investment.
+          </Typography>
+          <Typography css={sx.text}>
+            Hashdot aims for stable operation, expert innovation, and capital
+            value improvement for the growth of high potential companies around
+            the world.
+          </Typography>
+          <Typography css={sx.text}>
+            Hashdot consistently provides high-quality planning and
+            multi-faceted services for target investors and partners.
+          </Typography>
+        </Stack>
       </div>
     </div>
   );
@@ -37,9 +42,9 @@ const sx = {
     background-color: rgba(60, 100, 177, 0.06);
     display: flex;
     justify-content: center;
-    padding: 100px 0 150px 0;
+    padding: 5.208vw 0 7.813vw 0;
     @media ${MediaQueries.sm} {
-      padding: 100px 0;
+      padding: 27.776vw 0 37.221vw 0;
     }
   `,
   inner: css`
@@ -59,8 +64,20 @@ const sx = {
     margin-top: 50px;
   `,
   bodyText: css`
-    margin-top: 20px;
+    margin-top: 59px;
     font-size: 16px;
+    line-height: 160%;
     color: #737b7d;
+    gap: 14px;
+    @media ${MediaQueries.sm} {
+      gap: 0;
+      line-height: 160%;
+    }
+  `,
+  text: css`
+    @media ${MediaQueries.sm} {
+      font-size: 4.444vw;
+      line-height: 160%;
+    }
   `,
 };

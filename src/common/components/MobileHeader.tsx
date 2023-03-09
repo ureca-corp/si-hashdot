@@ -6,6 +6,7 @@ import { Dialog, IconButton } from "@mui/material";
 import { useState } from "react";
 import menuLogo from "@/menuLogo.png";
 import { BannerSection } from "@/domain/Sections/MainSection";
+import Link from "next/link";
 
 export const MobileHeader = () => {
   const [open, setOpen] = useState(false);
@@ -63,9 +64,22 @@ export const MobileMenu = ({ onClose, open }: MobileMenuType) => {
           <MenuButton onClick={onClose} text="Close" isMenuOpen={open} />
         </div>
         <ul css={sx.lists}>
-          <li>Home</li>
-          <li>Partners</li>
-          <li>Portfolio</li>
+          <li>
+            <Link href="#Home" onClick={onClose}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="#partners" onClick={onClose}>
+              Partners
+            </Link>
+            {/* <Link href="#Home">Partners</Link> */}
+          </li>
+          <li>
+            <Link href="#portfolio" onClick={onClose}>
+              Portfolio
+            </Link>
+          </li>
         </ul>
       </div>
       <BannerSection />

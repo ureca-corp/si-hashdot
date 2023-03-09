@@ -7,7 +7,7 @@ export const BannerSection = () => {
     <div css={sx.root}>
       <Typography css={sx.text}>
         {
-          "{   Nam   no   suscipit   quaerendum.   At   nam   minimum   ponderum.  Est   audiam   animal   molestiae   }"
+          "{   Nam   no   suscipit   quaerendum.   At   nam   minimum   ponderum.    }"
         }
       </Typography>
     </div>

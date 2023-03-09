@@ -1,12 +1,17 @@
 import { Header, MobileHeader } from "@/common/components";
 
 import { useCustomMediaQuery } from "@/common/theme/screen";
+import { Footer } from "../Sections/footer";
 import {
   BannerSection,
   MainSection,
   PortfolioSection,
 } from "../Sections/MainSection";
-import { PartnersSection } from "../Sections/PartnersSection/PartnersSection";
+import {
+  MobilePartnersSection,
+  PartnersSection,
+} from "../Sections/PartnersSection";
+import { MobilePortfolioSection } from "../Sections/portfolioSection";
 
 export const LandingView = () => {
   const { isSmall } = useCustomMediaQuery();
@@ -15,8 +20,9 @@ export const LandingView = () => {
       {isSmall ? <MobileHeader /> : <Header />}
       <MainSection />
       <BannerSection />
-      <PartnersSection />
-      <PortfolioSection />
+      {isSmall ? <MobilePartnersSection /> : <PartnersSection />}
+      {isSmall ? <MobilePortfolioSection /> : <PortfolioSection />}
+      <Footer />
     </div>
   );
 };
