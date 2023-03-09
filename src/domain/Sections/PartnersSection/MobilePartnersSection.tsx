@@ -1,4 +1,10 @@
-import { Stack, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Stack,
+  Typography,
+} from "@mui/material";
 import Image from "next/image";
 import { css } from "@emotion/react";
 import { usePartnersSection } from "./models/usePartnersSection";
@@ -18,21 +24,25 @@ export const MobilePartnersSection = () => {
           <Typography css={sx.title}>Partners</Typography>
           <Stack css={sx.Images}>
             {MobilePartners.map((it, index) => (
-              <div key={index} css={sx.wrap}>
-                <div
-                  onClick={() => handleChange(index)}
+              <Accordion
+                expanded={value == index}
+                onChange={() => handleChange(index)}
+                key={index}
+                css={sx.wrap}
+              >
+                <AccordionSummary
                   css={sx.logo(it.width, it.height)}
                   className="logo"
                 >
                   <Image src={it.src} alt="logo" fill />
-                </div>
-                {value === index ? (
+                </AccordionSummary>
+                <AccordionDetails>
                   <Typography css={sx.text} className="text">
                     At eripuit signiferumque sea, vel ad mucius{"\n"}molestie,
                     cu labitur iuvaret vulputate sed.
                   </Typography>
-                ) : null}
-              </div>
+                </AccordionDetails>
+              </Accordion>
             ))}
           </Stack>
         </Stack>
@@ -45,7 +55,7 @@ const sx = {
   root: css`
     width: 100%;
     background-color: #fff;
-    padding: 33.333vw 0 63.333vw 0;
+    padding: 33.333vw 0 30.556vw 0;
   `,
   inner: css`
     max-width: 1024px;
@@ -72,6 +82,10 @@ const sx = {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    box-shadow: none;
+    &::before {
+      background-color: #fff;
+    }
   `,
   logo: (width: string, height: string) => css`
     width: ${width};

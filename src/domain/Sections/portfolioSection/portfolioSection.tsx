@@ -35,6 +35,7 @@ const sx = {
   root: css`
     width: 100%;
     background-color: #fff;
+    padding-top: 6.25vw;
     padding-bottom: 14.115vw;
   `,
   inner: css`
