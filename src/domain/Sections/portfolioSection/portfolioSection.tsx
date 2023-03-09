@@ -100,14 +100,15 @@ const sx = {
   text: css`
     position: absolute;
     top: 10px;
-    left: 1vw;
+    left: 0vw;
     width: 16.667vw;
     font-size: 0.729vw;
     line-height: 1.242vw;
     color: #373f41;
     white-space: pre-wrap;
     display: flex;
-    opacity: 0;
+    justify-content: center;
+    opacity: 1;
     text-align: center;
   `,
 };
