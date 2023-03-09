@@ -1,2 +1,2 @@
-export { Header } from "./Header";
+export { Header } from "./PcHeader";
 export { MobileHeader } from "./MobileHeader";

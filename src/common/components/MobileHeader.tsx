@@ -89,7 +89,7 @@ export const MobileMenu = ({ onClose, open }: MobileMenuType) => {
 
 const sx = {
   root: css`
-    background-color: rgba(60, 100, 177, 0.06);
+    background-color: #f3f6fa;
     padding: 30px 19px 0 19px;
     display: flex;
     justify-content: end;

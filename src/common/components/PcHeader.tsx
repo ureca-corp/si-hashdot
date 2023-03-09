@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import { Typography } from "@mui/material";
 import Link from "next/link";
 
-export const Header = () => {
+export const PcHeader = () => {
   return (
     <div css={sx.root}>
       <nav>
@@ -30,9 +30,10 @@ export const Header = () => {
 
 const sx = {
   root: css`
+    position: fixed;
     width: 100%;
-    background-color: rgba(60, 100, 177, 0.06);
-
+    background-color: #f3f6fa;
+    z-index: 55;
     padding: 28px 0;
   `,
   lists: css`

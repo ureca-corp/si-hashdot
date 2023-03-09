@@ -39,10 +39,10 @@ export const MainSection = () => {
 const sx = {
   root: css`
     width: 100%;
-    background-color: rgba(60, 100, 177, 0.06);
+    background-color: #f3f6fa;
     display: flex;
     justify-content: center;
-    padding: 5.208vw 0 7.813vw 0;
+    padding: 9.375vw 0 7.813vw 0;
     @media ${MediaQueries.sm} {
       padding: 27.776vw 0 37.221vw 0;
     }

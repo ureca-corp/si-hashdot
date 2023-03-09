@@ -1,4 +1,5 @@
-import { Header, MobileHeader } from "@/common/components";
+import { MobileHeader } from "@/common/components";
+import { PcHeader } from "@/common/components/PcHeader";
 
 import { useCustomMediaQuery } from "@/common/theme/screen";
 import { Footer } from "../Sections/footer";
@@ -17,7 +18,6 @@ export const LandingView = () => {
   const { isSmall } = useCustomMediaQuery();
   return (
     <div>
-      {isSmall ? <MobileHeader /> : <Header />}
       <MainSection />
       <BannerSection />
       {isSmall ? <MobilePartnersSection /> : <PartnersSection />}
