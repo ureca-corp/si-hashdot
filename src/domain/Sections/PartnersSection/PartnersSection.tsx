@@ -54,6 +54,7 @@ const sx = {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+
     align-items: center;
     justify-items: center;
   `,
@@ -64,6 +65,7 @@ const sx = {
     display: flex;
     justify-content: center;
     margin-bottom: 9.635vw;
+    align-items: center;
     cursor: pointer;
     &:hover {
       .text {
@@ -78,17 +80,24 @@ const sx = {
     width: ${width};
     height: ${height};
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   `,
   text: css`
     position: absolute;
-    top: 10px;
+    top: 0vw;
     left: 0.5vw;
     width: 16.667vw;
     font-size: 0.729vw;
     line-height: 1.242vw;
+    color: #373f41;
     white-space: pre-wrap;
+    display: flex;
+    justify-content: center;
     opacity: 0;
     text-align: center;
-    color: #373f41;
+    height: 100%;
+    align-items: center;
   `,
 };

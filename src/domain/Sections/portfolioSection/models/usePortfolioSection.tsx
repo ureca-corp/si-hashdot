@@ -4,6 +4,7 @@ import balloonBattle from "@/balloon_battle.png";
 import ailey from "@/ailey.png";
 import runToRun from "@/runtorun.png";
 import gunlancer from "@/gunlancer.png";
+import solana from "@/solana.png";
 
 export const usePortfolioSection = () => {
   const portfolios = [
@@ -23,9 +24,9 @@ export const usePortfolioSection = () => {
       height: "5.885vw",
     },
     {
-      src: ailey,
-      width: "11.458vw",
-      height: "5.156vw",
+      src: solana,
+      width: "13.3vw",
+      height: "3.64vw",
     },
     {
       src: runToRun,
@@ -56,46 +57,6 @@ export const usePortfolioSection = () => {
       src: ailey,
       width: "11.458vw",
       height: "5.156vw",
-    },
-    {
-      src: runToRun,
-      width: "14.479vw",
-      height: "3.698vw",
-    },
-    {
-      src: gunlancer,
-      width: "13.281vw",
-      height: "5.313vw",
-    },
-    {
-      src: ailey,
-      width: "11.458vw",
-      height: "5.156vw",
-    },
-    {
-      src: runToRun,
-      width: "14.479vw",
-      height: "3.698vw",
-    },
-    {
-      src: gunlancer,
-      width: "13.281vw",
-      height: "5.313vw",
-    },
-    {
-      src: ailey,
-      width: "11.458vw",
-      height: "5.156vw",
-    },
-    {
-      src: runToRun,
-      width: "14.479vw",
-      height: "3.698vw",
-    },
-    {
-      src: gunlancer,
-      width: "13.281vw",
-      height: "5.313vw",
     },
   ];
 

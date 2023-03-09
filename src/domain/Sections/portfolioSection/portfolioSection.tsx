@@ -52,24 +52,13 @@ const sx = {
     text-align: center;
     color: #22232f;
   `,
-  // Images: css`
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr 1fr;
-  //   width: 100%;
-  //   row-gap: 7.8vw;
-  //   column-gap: 10.677vw;
-  //   align-items: center;
-  //   justify-items: center;
-  // `,
+
   Images: css`
     width: 53.333vw;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    /* gap: 6.458vw; */
 
-    /* row-gap: 7.8vw;
-  column-gap: 10.677vw; */
     align-items: center;
     justify-items: center;
   `,
@@ -96,11 +85,12 @@ const sx = {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
   `,
   text: css`
     position: absolute;
-    top: 10px;
-    left: 0vw;
+    top: 0vw;
+    left: 0.5vw;
     width: 16.667vw;
     font-size: 0.729vw;
     line-height: 1.242vw;
@@ -110,5 +100,7 @@ const sx = {
     justify-content: center;
     opacity: 0;
     text-align: center;
+    height: 100%;
+    align-items: center;
   `,
 };
