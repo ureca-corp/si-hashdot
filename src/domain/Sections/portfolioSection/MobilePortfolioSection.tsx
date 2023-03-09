@@ -25,6 +25,7 @@ export const MobilePortfolioSection = () => {
           <Stack css={sx.Images}>
             {mobilePortfolios.map((it, index) => (
               <Accordion
+                disableGutters={true}
                 expanded={value == index}
                 onChange={() => handleChange(index)}
                 key={index}

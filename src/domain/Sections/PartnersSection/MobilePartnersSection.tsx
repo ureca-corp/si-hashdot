@@ -25,6 +25,7 @@ export const MobilePartnersSection = () => {
           <Stack css={sx.Images}>
             {MobilePartners.map((it, index) => (
               <Accordion
+                disableGutters={true}
                 expanded={value == index}
                 onChange={() => handleChange(index)}
                 key={index}
