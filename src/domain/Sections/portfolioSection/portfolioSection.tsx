@@ -100,7 +100,7 @@ const sx = {
   text: css`
     position: absolute;
     top: 10px;
-    left: 0;
+    left: 1vw;
     width: 16.667vw;
     font-size: 0.729vw;
     line-height: 1.242vw;
