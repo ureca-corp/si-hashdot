@@ -48,19 +48,22 @@ const sx = {
     text-align: center;
     color: #22232f;
   `,
+
   Images: css`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    row-gap: 7.8vw;
-    column-gap: 10.677vw;
+    width: 53.333vw;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
     align-items: center;
     justify-items: center;
   `,
   wrap: css`
     position: relative;
-    width: auto;
+    width: calc(53.333vw / 3);
     height: 5.938vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9.635vw;
     cursor: pointer;
     &:hover {
       .text {

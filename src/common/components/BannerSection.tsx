@@ -6,9 +6,7 @@ export const BannerSection = () => {
   return (
     <div css={sx.root}>
       <Typography css={sx.text}>
-        {
-          "{   Nam   no   suscipit   quaerendum.   At   nam   minimum   ponderum.    }"
-        }
+        {"{ Nam no suscipit quaerendum. At nam minimum ponderum. }"}
       </Typography>
     </div>
   );
@@ -27,6 +25,7 @@ const sx = {
     width: 90%;
     margin: 0 auto;
     font-size: 14px;
+    font-family: "IBM Plex Mono", monospace;
     @media ${MediaQueries.sm} {
       font-size: 12px;
     }
