@@ -108,7 +108,7 @@ const sx = {
     white-space: pre-wrap;
     display: flex;
     justify-content: center;
-    opacity: 1;
+    opacity: 0;
     text-align: center;
   `,
 };

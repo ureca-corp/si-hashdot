@@ -87,7 +87,7 @@ const sx = {
     font-size: 0.729vw;
     line-height: 1.242vw;
     white-space: pre-wrap;
-    opacity: 1;
+    opacity: 0;
     text-align: center;
     color: #373f41;
   `,
