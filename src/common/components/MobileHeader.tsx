@@ -89,10 +89,14 @@ export const MobileMenu = ({ onClose, open }: MobileMenuType) => {
 
 const sx = {
   root: css`
+    width: 100%;
+    position: fixed;
+    right: 0;
     background-color: #f3f6fa;
     padding: 30px 19px 0 19px;
     display: flex;
     justify-content: end;
+    z-index: 55;
   `,
   menu: css`
     font-weight: 500;

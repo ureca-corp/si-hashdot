@@ -69,6 +69,7 @@ const sx = {
     display: flex;
     justify-content: center;
     margin-bottom: 9.635vw;
+    align-items: center;
     cursor: pointer;
     &:hover {
       .text {

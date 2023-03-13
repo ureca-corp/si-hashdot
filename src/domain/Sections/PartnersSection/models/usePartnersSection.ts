@@ -2,7 +2,7 @@ import solana from "@/solana.png";
 import fantasyTown from "@/fantasy_town.png";
 import battlas from "@/battlas.png";
 import balloonBattle from "@/balloon_battle.png";
-
+import avalanche from "@/avalanche.png";
 export const usePartnersSection = () => {
   const partners = [
     {
@@ -13,9 +13,9 @@ export const usePartnersSection = () => {
         " At eripuit signiferumque sea, vel ad mucius\nmolestie, culabitur iuvaret vulputate sed.",
     },
     {
-      src: fantasyTown,
-      width: "15.833vw",
-      height: "5.938vw",
+      src: avalanche,
+      width: "17.1875vw",
+      height: "3.5938vw",
       description:
         " At eripuit signiferumque sea, vel ad mucius\nmolestie, culabitur iuvaret vulputate sed.",
     },
@@ -27,9 +27,9 @@ export const usePartnersSection = () => {
         " At eripuit signiferumque sea, vel ad mucius\nmolestie, culabitur iuvaret vulputate sed.",
     },
     {
-      src: balloonBattle,
-      width: "10.99vw",
-      height: "5.885vw",
+      src: fantasyTown,
+      width: "15.833vw",
+      height: "5.938vw",
       description:
         " At eripuit signiferumque sea, vel ad mucius\nmolestie, culabitur iuvaret vulputate sed.",
     },
@@ -42,16 +42,23 @@ export const usePartnersSection = () => {
       height: "13.889vw",
     },
     {
-      src: solana,
-      width: "51.667vw",
-      height: "13.889vw",
+      src: avalanche,
+      width: "57.5vw",
+      height: "11.6667vw",
       description:
         " At eripuit signiferumque sea, vel ad mucius\nmolestie, culabitur iuvaret vulputate sed.",
     },
     {
-      src: solana,
-      width: "51.667vw",
-      height: "13.889vw",
+      src: battlas,
+      width: "36.9444vw",
+      height: "16.3889vw",
+      description:
+        " At eripuit signiferumque sea, vel ad mucius\nmolestie, culabitur iuvaret vulputate sed.",
+    },
+    {
+      src: fantasyTown,
+      width: "52.7778vw",
+      height: "20vw",
       description:
         " At eripuit signiferumque sea, vel ad mucius\nmolestie, culabitur iuvaret vulputate sed.",
     },

@@ -42,9 +42,9 @@ const sx = {
     background-color: #f3f6fa;
     display: flex;
     justify-content: center;
-    padding: 9.375vw 0 7.813vw 0;
+    padding: 17.375vw 0 7.813vw 0;
     @media ${MediaQueries.sm} {
-      padding: 27.776vw 0 37.221vw 0;
+      padding: 36.776vw 0 37.221vw 0;
     }
   `,
   inner: css`
