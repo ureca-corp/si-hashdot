@@ -59,7 +59,7 @@ const sx = {
     padding: 11.042vw 0 10.573vw 0;
     aspect-ratio: 1/0.355;
     @media ${MediaQueries.sm} {
-      padding: 36.776vw 0 0 0;
+      padding: 0;
       aspect-ratio: 1/1.75;
     }
   `,
