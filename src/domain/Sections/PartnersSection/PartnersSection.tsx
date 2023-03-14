@@ -9,7 +9,7 @@ export const PartnersSection = () => {
     <div css={sx.root} id="partners">
       <Stack css={sx.inner}>
         <Stack>
-          <Typography css={sx.title}>Partners</Typography>
+          <Typography css={sx.title}>PARTNERS</Typography>
           <div css={sx.Images}>
             {partners.map((it, index) => (
               <div key={index} css={sx.wrap}>
@@ -42,11 +42,11 @@ const sx = {
     gap: 250px;
   `,
   title: css`
-    font-weight: 700;
-    font-size: 1.667vw;
+    font-size: 2.5vw;
     margin-bottom: 8.9vw;
     text-align: center;
     color: #22232f;
+    font-family: "Fjalla One";
   `,
 
   Images: css`
@@ -99,5 +99,6 @@ const sx = {
     text-align: center;
     height: 100%;
     align-items: center;
+    font-family: "Mulish";
   `,
 };

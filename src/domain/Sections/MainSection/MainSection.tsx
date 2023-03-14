@@ -1,8 +1,10 @@
 import { css } from "@emotion/react";
 import Image from "next/image";
-import logo from "@/hashdot_logo.png";
+import logo from "@/Logo.png";
 import { Stack, Typography } from "@mui/material";
 import { MediaQueries, useCustomMediaQuery } from "@/common/theme/screen";
+import bg from "@/bg.png";
+import mbBg from "@/mb-bg.png";
 
 export const MainSection = () => {
   const { isSmall } = useCustomMediaQuery();
@@ -14,7 +16,9 @@ export const MainSection = () => {
             <Image src={logo} alt="logo" fill />
           </div>
         ) : (
-          <Image src={logo} alt="logo" width={373} height={72} />
+          <div css={sx.pcLogo}>
+            <Image src={logo} alt="logo" fill />
+          </div>
         )}
         <Stack css={sx.bodyText}>
           <Typography css={sx.text}>
@@ -32,52 +36,94 @@ export const MainSection = () => {
           </Typography>
         </Stack>
       </div>
+      {isSmall ? (
+        <div css={sx.mbBg}>
+          <Image src={mbBg} alt="background" fill></Image>
+        </div>
+      ) : (
+        <div css={sx.bg}>
+          <Image src={bg} alt="background" fill></Image>
+        </div>
+      )}
     </div>
   );
 };
 
 const sx = {
   root: css`
+    position: relative;
     width: 100%;
-    background-color: #f3f6fa;
+    background: #22232f;
     display: flex;
     justify-content: center;
-    padding: 17.375vw 0 7.813vw 0;
+    padding: 11.042vw 0 10.573vw 0;
+    aspect-ratio: 1/0.355;
     @media ${MediaQueries.sm} {
-      padding: 36.776vw 0 37.221vw 0;
+      padding: 36.776vw 0 0 0;
+      aspect-ratio: 1/1.75;
     }
   `,
   inner: css`
-    max-width: 795px;
     width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3.125vw;
     @media ${MediaQueries.sm} {
       width: 100%;
-      padding: 0 30px;
+      padding: 0 8.333vw;
+      gap: 13.889vw;
+      flex-direction: column;
     }
   `,
   logo: css`
-    width: 83.3vw;
-    height: 15.8vw;
+    width: 80.833vw;
+    height: 16.111vw;
     position: relative;
+    z-index: 5;
+  `,
+  pcLogo: css`
+    position: relative;
+    width: 18.177vw;
+    aspect-ratio: 1/0.206;
   `,
   title: css`
     margin-top: 50px;
   `,
   bodyText: css`
-    margin-top: 59px;
-    font-size: 16px;
-    line-height: 160%;
-    color: #737b7d;
-    gap: 14px;
+    position: relative;
+    z-index: 45;
+    max-width: 652.992px;
+    /* width: 33.958vw; */
+
+    color: #fff;
+    gap: 1.042vw;
     @media ${MediaQueries.sm} {
-      gap: 0;
-      line-height: 160%;
+      gap: 5.556vw;
     }
   `,
   text: css`
+    font-size: 0.833vw;
+    line-height: 180%;
     @media ${MediaQueries.sm} {
-      font-size: 4.444vw;
-      line-height: 160%;
+      font-size: 3.333vw;
+      line-height: 180%;
     }
+  `,
+  bg: css`
+    position: absolute;
+    width: 78.906vw;
+    aspect-ratio: 1/0.45;
+    top: 0;
+    right: 0;
+    mix-blend-mode: multiply;
+  `,
+  mbBg: css`
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1.75;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
   `,
 };

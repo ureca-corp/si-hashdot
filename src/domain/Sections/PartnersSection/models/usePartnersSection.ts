@@ -10,7 +10,7 @@ export const usePartnersSection = () => {
       width: "13.3vw",
       height: "3.64vw",
       description:
-        " At eripuit signiferumque sea, vel ad mucius\nmolestie, culabitur iuvaret vulputate sed.",
+        "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
     {
       src: avalanche,
@@ -40,6 +40,8 @@ export const usePartnersSection = () => {
       src: solana,
       width: "51.667vw",
       height: "13.889vw",
+      description:
+        "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
     {
       src: avalanche,

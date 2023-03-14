@@ -4,9 +4,11 @@ import close from "@/icons/close.png";
 import Image from "next/image";
 import { Dialog, IconButton } from "@mui/material";
 import { useState } from "react";
-import menuLogo from "@/menuLogo.png";
+import menuLogo from "@/Menu-Logo.png";
 import { BannerSection } from "@/domain/Sections/MainSection";
 import Link from "next/link";
+import { HideOnScroll } from "./HideOnScroll";
+import mbBg from "@/mb-bg.png";
 
 export const MobileHeader = () => {
   const [open, setOpen] = useState(false);
@@ -19,11 +21,13 @@ export const MobileHeader = () => {
   };
 
   return (
-    <div css={sx.root}>
-      <MenuButton onClick={handleClickOpen} text="Menu" isMenuOpen={open} />
+    <HideOnScroll>
+      <div css={sx.root}>
+        <MenuButton onClick={handleClickOpen} text="Menu" isMenuOpen={open} />
 
-      <MobileMenu open={open} onClose={handleClose} />
-    </div>
+        <MobileMenu open={open} onClose={handleClose} />
+      </div>
+    </HideOnScroll>
   );
 };
 
@@ -81,6 +85,9 @@ export const MobileMenu = ({ onClose, open }: MobileMenuType) => {
             </Link>
           </li>
         </ul>
+        <div css={sx.bg}>
+          <Image src={mbBg} alt="background" fill />
+        </div>
       </div>
       <BannerSection />
     </Dialog>
@@ -92,25 +99,28 @@ const sx = {
     width: 100%;
     position: fixed;
     right: 0;
-    background-color: #f3f6fa;
-    padding: 30px 19px 0 19px;
+    background-color: #22232f;
+    padding: 6.944vw 6.111vw 6.944vw 0;
     display: flex;
     justify-content: end;
     z-index: 55;
   `,
   menu: css`
     font-weight: 500;
-    font-size: 16px;
+    font-size: 4.444vw;
     color: #b4b8bf;
   `,
   menuWrap: css`
     display: flex;
     align-items: center;
     gap: 10px;
+    position: relative;
+    z-index: 550;
   `,
   dialog: css`
-    background-color: rgba(60, 100, 177, 0.06);
-    padding: 30px 19px 0 19px;
+    background: #22232f;
+    position: relative;
+    padding: 6.944vw 6.111vw 0 5.278vw;
     height: 100%;
   `,
   menuHeader: css`
@@ -120,8 +130,8 @@ const sx = {
   `,
   menuLogo: css`
     position: relative;
-    width: 37.5vw;
-    aspect-ratio: 1/0.296;
+    width: 34.722vw;
+    aspect-ratio: 1/0.32;
   `,
   lists: css`
     font-weight: 500;
@@ -129,6 +139,19 @@ const sx = {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 11.111vw;
+    font-family: "Fjalla One";
+    color: #fff;
+    font-size: 5vw;
+    position: relative;
+    z-index: 550;
+  `,
+  bg: css`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
   `,
 };

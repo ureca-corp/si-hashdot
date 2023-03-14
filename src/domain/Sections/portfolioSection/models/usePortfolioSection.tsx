@@ -19,54 +19,64 @@ export const usePortfolioSection = () => {
       src: ailey,
       width: "11.458vw",
       height: "5.156vw",
+      text: "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
     {
       src: runToRun,
       width: "14.479vw",
       height: "3.698vw",
+      text: "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
     {
       src: balloonBattle,
       width: "10.99vw",
       height: "5.885vw",
+      text: "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
     {
       src: fara,
       width: "8.6979vw",
       height: "5.9375vw",
+      text: "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
     {
       src: solchicks,
       width: "17.2396vw",
       height: "3.2292vw",
+      text: "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
     {
       src: melon,
       width: "13.4375vw",
       height: " 4.2188vw",
+      text: "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
     {
       src: metaracers,
       width: "15.1563vw",
       height: "3.4896vw",
+      text: "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
 
     {
       src: starpunk,
       width: "18.6458vw",
       height: "4.8438vw",
+      text: "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
 
     {
       src: gameFi,
       width: "15.8854vw",
       height: "4.4271vw",
+      text: "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
 
     {
       src: mytheria,
       width: "13.0208vw",
       height: "6.3542vw",
+      text: "Powerful for developers. Fast for everyone. Bring blockchain to the people.",
     },
     // {
     //   src: gunlancer,
@@ -85,54 +95,64 @@ export const usePortfolioSection = () => {
       src: ailey,
       width: "37.778vw",
       height: "16.944vw",
+      text: "An AI-based NFT project that virtual human develops into celebrity in reality.",
     },
     {
       src: runToRun,
       width: "50vw",
       height: "12.222vw",
+      text: "An AI-based NFT project that virtual human develops into celebrity in reality.",
     },
     {
       src: balloonBattle,
       width: "33.611vw",
       height: "18.611vw",
+      text: "An AI-based NFT project that virtual human develops into celebrity in reality.",
     },
     {
       src: fara,
       width: " 31.9444vw",
       height: "21.6667vw",
+      text: "An AI-based NFT project that virtual human develops into celebrity in reality.",
     },
     {
       src: solchicks,
       width: "55.5556vw",
       height: "10.2778vw",
+      text: "An AI-based NFT project that virtual human develops into celebrity in reality.",
     },
     {
       src: melon,
       width: "43.6111vw",
       height: "13.6111vw",
+      text: "An AI-based NFT project that virtual human develops into celebrity in reality.",
     },
     {
       src: metaracers,
       width: " 51.9444vw",
       height: "11.9444vw",
+      text: "An AI-based NFT project that virtual human develops into celebrity in reality.",
     },
 
     {
       src: starpunk,
       width: "59.4444vw",
       height: "15.5556vw",
+      text: "An AI-based NFT project that virtual human develops into celebrity in reality.",
     },
 
     {
       src: gameFi,
       width: "53.0556vw",
       height: "14.7222vw",
+      text: "An AI-based NFT project that virtual human develops into celebrity in reality.",
     },
 
     {
       src: mytheria,
       width: "47.5vw",
       height: "23.3333vw",
+      text: "An AI-based NFT project that virtual human develops into celebrity in reality.",
     },
     ////
 

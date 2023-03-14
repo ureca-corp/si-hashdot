@@ -39,8 +39,7 @@ export const MobilePortfolioSection = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography css={sx.text} className="text">
-                    At eripuit signiferumque sea, vel ad mucius{"\n"}molestie,
-                    cu labitur iuvaret vulputate sed.
+                    {it.text}
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -56,7 +55,7 @@ const sx = {
   root: css`
     width: 100%;
     background-color: #fff;
-    padding-top: 33.333vw;
+    padding-top: 12.333vw;
     padding-bottom: 41.667vw;
   `,
   inner: css`
@@ -101,5 +100,6 @@ const sx = {
     text-align: center;
     color: #373f41;
     margin-top: 5vw;
+    font-family: "Mulish";
   `,
 };

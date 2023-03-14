@@ -5,10 +5,10 @@ import { Stack, Typography } from "@mui/material";
 export const Footer = () => {
   return (
     <Stack css={sx.root}>
-      <Typography css={sx.top}>Et has minim elitr intellegat.</Typography>
+      <Typography css={sx.top}>{"Eat, Sleep, Hype, Repeat :)"}</Typography>
 
       <Typography css={sx.bottom}>
-        © 2022 HASHDOT{"\n"}Contact@hashdot.com
+        © 2022 HASHDOT All rights reserved.
       </Typography>
     </Stack>
   );
@@ -25,14 +25,16 @@ const sx = {
     }
   `,
   top: css`
-    font-weight: 600;
     color: #373f41;
+    font-weight: 500;
     font-size: 0.833vw;
+    line-height: 150%;
     @media ${MediaQueries.sm} {
       font-size: 4.444vw;
     }
   `,
   bottom: css`
+    font-family: "Lato";
     text-align: center;
     color: #b4b8bf;
     font-size: 0.573vw;

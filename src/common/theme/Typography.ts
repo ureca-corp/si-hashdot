@@ -1,7 +1,7 @@
 import { TypographyOptions } from "@mui/material/styles/createTypography";
 
 const baseTypographyOptions: TypographyOptions = {
-  fontFamily: "Lato",
+  fontFamily: "IBM Plex Mono",
   allVariants: {
     whiteSpace: "pre-wrap",
   },

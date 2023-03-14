@@ -21,7 +21,7 @@ export const MobilePartnersSection = () => {
     <div css={sx.root} id="partners">
       <Stack css={sx.inner}>
         <Stack>
-          <Typography css={sx.title}>Partners</Typography>
+          <Typography css={sx.title}>PARTNERS</Typography>
           <Stack css={sx.Images}>
             {MobilePartners.map((it, index) => (
               <Accordion
@@ -39,8 +39,7 @@ export const MobilePartnersSection = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography css={sx.text} className="text">
-                    At eripuit signiferumque sea, vel ad mucius{"\n"}molestie,
-                    cu labitur iuvaret vulputate sed.
+                    {it.description}
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -71,6 +70,7 @@ const sx = {
     margin-bottom: 18.889vw;
     text-align: center;
     color: #22232f;
+    font-family: "Fjalla One";
   `,
   Images: css`
     width: 100%;
@@ -100,5 +100,6 @@ const sx = {
     text-align: center;
     color: #373f41;
     margin-top: 5vw;
+    font-family: "Mulish";
   `,
 };

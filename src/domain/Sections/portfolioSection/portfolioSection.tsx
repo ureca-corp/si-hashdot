@@ -11,7 +11,7 @@ export const PortfolioSection = () => {
     <div css={sx.root} id="portfolio">
       <Stack css={sx.inner}>
         <Stack>
-          <Typography css={sx.title}>Portfolio</Typography>
+          <Typography css={sx.title}>PORTFOLIO</Typography>
           <div css={sx.Images}>
             {portfolios.map((it, index) => (
               <div key={index} css={sx.wrap}>
@@ -19,8 +19,7 @@ export const PortfolioSection = () => {
                   <Image src={it.src} alt="logo" fill />
                 </div>
                 <div css={sx.text} className="text">
-                  At eripuit signiferumque sea, vel ad mucius{"\n"}molestie, cu
-                  labitur iuvaret vulputate sed.
+                  {it.text}
                 </div>
               </div>
             ))}
@@ -36,7 +35,7 @@ const sx = {
     width: 100%;
     background-color: #fff;
     padding-top: 6.25vw;
-    padding-bottom: 14.115vw;
+    padding-bottom: 5.625vw;
   `,
   inner: css`
     max-width: 1024px;
@@ -46,8 +45,8 @@ const sx = {
     gap: 250px;
   `,
   title: css`
-    font-weight: 700;
-    font-size: 1.667vw;
+    font-family: "Fjalla One";
+    font-size: 2.5vw;
     margin-bottom: 7.76vw;
     text-align: center;
     color: #22232f;
@@ -103,5 +102,6 @@ const sx = {
     text-align: center;
     height: 100%;
     align-items: center;
+    font-family: "Mulish";
   `,
 };
