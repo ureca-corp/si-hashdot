@@ -113,7 +113,7 @@ const sx = {
     }
   `,
   text: css`
-    font-size: 14px;
+    font-size: 16px;
     /* font-size: 0.833vw; */
     line-height: 180%;
     @media ${MediaQueries.sm} {
