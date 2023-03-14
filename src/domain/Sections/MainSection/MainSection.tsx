@@ -58,6 +58,9 @@ const sx = {
     justify-content: center;
     padding: 11.042vw 0 10.573vw 0;
     aspect-ratio: 1/0.355;
+    @media ${MediaQueries.lg} {
+      aspect-ratio: auto;
+    }
     @media ${MediaQueries.sm} {
       padding: 0;
       aspect-ratio: 1/1.75;
@@ -69,6 +72,10 @@ const sx = {
     align-items: flex-start;
     justify-content: center;
     gap: 3.125vw;
+    @media ${MediaQueries.lg} {
+      flex-direction: column;
+      padding-top: 50px;
+    }
     @media ${MediaQueries.sm} {
       width: 100%;
       padding: 0 8.333vw;
@@ -86,6 +93,9 @@ const sx = {
     position: relative;
     width: 18.177vw;
     aspect-ratio: 1/0.206;
+    @media ${MediaQueries.lg} {
+      width: 200px;
+    }
   `,
   title: css`
     margin-top: 50px;
@@ -103,7 +113,8 @@ const sx = {
     }
   `,
   text: css`
-    font-size: 0.833vw;
+    font-size: 14px;
+    /* font-size: 0.833vw; */
     line-height: 180%;
     @media ${MediaQueries.sm} {
       font-size: 3.333vw;
@@ -117,6 +128,9 @@ const sx = {
     top: 0;
     right: 0;
     mix-blend-mode: multiply;
+    @media ${MediaQueries.lg} {
+      height: 100%;
+    }
   `,
   mbBg: css`
     position: absolute;
