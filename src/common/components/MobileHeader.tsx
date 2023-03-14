@@ -3,7 +3,7 @@ import menu from "@/icons/menu.png";
 import close from "@/icons/close.png";
 import Image from "next/image";
 import { Dialog, IconButton } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import menuLogo from "@/Menu-Logo.png";
 import { BannerSection } from "@/domain/Sections/MainSection";
 import Link from "next/link";
@@ -19,10 +19,17 @@ export const MobileHeader = () => {
   const handleClose = () => {
     setOpen(false);
   };
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const updateScroll = () => {
+    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", updateScroll);
+  });
 
   return (
     <HideOnScroll>
-      <div css={sx.root}>
+      <div css={sx.root} className={scrollPosition < 52 ? "" : "headerBg"}>
         <MenuButton onClick={handleClickOpen} text="Menu" isMenuOpen={open} />
 
         <MobileMenu open={open} onClose={handleClose} />
@@ -99,11 +106,13 @@ const sx = {
     width: 100%;
     position: fixed;
     right: 0;
-    background-color: #22232f;
     padding: 6.944vw 6.111vw 6.944vw 0;
     display: flex;
     justify-content: end;
     z-index: 55;
+    &.headerBg {
+      background-color: #22232f;
+    }
   `,
   menu: css`
     font-weight: 500;
